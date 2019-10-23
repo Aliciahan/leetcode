@@ -46,7 +46,7 @@ func (t *StackSelfDefined) Pop() interface{}{
 	return n.value
 }
 
-func (t * StackSelfDefined) Push(value interface{}) interface{}{
+func (t * StackSelfDefined) Push(value interface{}) {
 	t.lock.Lock()
 	defer t.lock.Unlock()
 
