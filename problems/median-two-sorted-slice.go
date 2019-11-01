@@ -37,8 +37,8 @@ max (A[i-1], B[j-1]) when m+n is odd
 
  */
 
-func MedianTwoSortedList(nums1, nums2 []int) double {
-
-
-
-}
+//func MedianTwoSortedList(nums1, nums2 []int) double {
+//
+//
+//
+//}
