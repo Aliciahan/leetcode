@@ -40,3 +40,8 @@ func (s *ItemStackSlice) Pop() Item{
 	s.items = s.items[0:len(s.items)-1]
 	return item
 }
+
+func (s *ItemStackSlice) Len() int{
+	return len(s.items)
+}
+
