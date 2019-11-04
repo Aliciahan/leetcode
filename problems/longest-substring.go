@@ -1,5 +1,25 @@
 package problems
 
+func LengthOfLongestSubstringMap(original string) int{
+	s := []byte(original)
+	ans := 0
+	n := len(s)
+	mapping := make(map[byte]int)
+	i := 0 //try to extend range [i,j]
+	j:=0
+	for  ; j< n;j++ {
+		if charJ,contains := mapping[s[j]]; contains {
+			if charJ > i {
+				i = charJ
+			}
+		}
+		if ((j-i)+1) > ans {
+			ans = j-i+1
+		}
+		mapping[s[j]]=j+1
+	}
+	return ans
+}
 
 func LengthOfLongestSubstring(original string) int {
 	biggestSize := 1
@@ -16,6 +36,7 @@ func LengthOfLongestSubstring(original string) int {
 			}
 		}
 	}
+
 	return biggestSize
 }
 
