@@ -1,6 +1,7 @@
 package problems
 
 import (
+	. "github.com/Aliciahan/leetcode/data-structure"
 	"log"
 )
 

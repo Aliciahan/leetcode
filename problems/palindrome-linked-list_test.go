@@ -1,6 +1,9 @@
 package problems
 
-import "testing"
+import (
+	. "github.com/Aliciahan/leetcode/data-structure"
+	"testing"
+)
 
 var linkedList1 = &ListNode{
 	Val:  1,

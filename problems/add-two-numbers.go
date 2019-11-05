@@ -1,6 +1,8 @@
 package problems
 
-import "fmt"
+import (
+	. "github.com/Aliciahan/leetcode/data-structure"
+)
 
 //You are given two non-empty linked lists representing two non-negative integers.
 // The digits are stored in reverse order and each of their nodes contain a single digit.
@@ -14,20 +16,6 @@ import "fmt"
 //Explanation: 342 + 465 = 807.
 
 
-
-type ListNode struct {
-    Val int
-    Next *ListNode
-}
-
-func (l *ListNode) PrintAll(){
-	po := l
-	for ; po.Next!= nil ;po=po.Next {
-		fmt.Print(po.Val)
-	}
-	fmt.Print(po.Val)
-	fmt.Print("\n")
-}
 
 
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {

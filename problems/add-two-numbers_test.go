@@ -1,5 +1,7 @@
 package problems
 
+import . "github.com/Aliciahan/leetcode/data-structure"
+
 import "testing"
 var(
 	l1 = ListNode{
